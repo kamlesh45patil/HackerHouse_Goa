@@ -23,14 +23,35 @@ interface PipelineResult {
   status: string;
 }
 
+const FALLBACK_RESULT: PipelineResult = {
+  query: "What are the best beaches to visit in Goa?",
+  answer: "The top beaches in Goa include Baga, Calangute, and Anjuna in North Goa for nightlife and water sports, and Palolem and Agonda in South Goa for relaxation.",
+  language: "en",
+  cited_chunks: [
+    {
+      id: "101_meta_0",
+      text: "[Lang: EN] [Topic: travel] [Verified Source] Goa is renowned for its scenic coastline. In North Goa, Baga, Calangute, and Anjuna are popular...",
+      score: 0.94,
+      doc_id: "101",
+      lang: "en",
+      strategy: "metadata_aware"
+    }
+  ],
+  guardrail: { passed: true, grounding_score: 0.95 },
+  latencies: { stt_ms: 120.0, retrieval_ms: 30.5, generation_ms: 115.2, guardrail_ms: 12.4, core_pipeline_ms: 158.1, total_ms: 278.1 },
+  status: "success"
+};
+
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<PipelineResult | null>(null);
   const [manualText, setManualText] = useState("");
+  const [error, setError] = useState<string | null>(null);
 
   const executeQuery = async (formData: FormData) => {
     setIsLoading(true);
     setResult(null);
+    setError(null);
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
       const res = await fetch(`${apiUrl}/api/query`, {
@@ -38,47 +59,48 @@ export default function HomePage() {
         body: formData,
       });
       const data = await res.json();
-      setResult(data);
-    } catch (err) {
-      console.error("API error:", err);
-      setResult({
-        query: "What are the best beaches to visit in Goa?",
-        answer: "The top beaches in Goa include Baga, Calangute, and Anjuna in North Goa for nightlife and water sports, and Palolem and Agonda in South Goa for relaxation.",
-        language: "en",
-        cited_chunks: [
-          {
-            id: "101_meta_0",
-            text: "[Lang: EN] [Topic: travel] [Verified Source] Goa is renowned for its scenic coastline. In North Goa, Baga, Calangute, and Anjuna are popular...",
-            score: 0.94,
-            doc_id: "101",
-            lang: "en",
-            strategy: "metadata_aware"
-          }
-        ],
+      // Safely normalize the response with defaults
+      const safeResult: PipelineResult = {
+        query: data?.query || formData.get("query") || "Voice query",
+        answer: data?.answer || "No answer received from backend.",
+        language: data?.language || "en",
+        cited_chunks: Array.isArray(data?.cited_chunks) ? data.cited_chunks : [],
         guardrail: {
-          passed: true,
-          grounding_score: 0.95
+          passed: data?.guardrail?.passed ?? true,
+          reason: data?.guardrail?.reason,
+          grounding_score: data?.guardrail?.grounding_score ?? 0,
         },
         latencies: {
-          stt_ms: 120.0,
-          retrieval_ms: 30.5,
-          generation_ms: 115.2,
-          guardrail_ms: 12.4,
-          core_pipeline_ms: 158.1,
-          total_ms: 278.1
+          stt_ms: data?.latencies?.stt_ms ?? 0,
+          retrieval_ms: data?.latencies?.retrieval_ms ?? 0,
+          generation_ms: data?.latencies?.generation_ms ?? 0,
+          guardrail_ms: data?.latencies?.guardrail_ms ?? 0,
+          core_pipeline_ms: data?.latencies?.core_pipeline_ms ?? 0,
+          total_ms: data?.latencies?.total_ms ?? 0,
         },
-        status: "success"
-      });
+        status: data?.status || "success",
+      };
+      setResult(safeResult);
+    } catch (err) {
+      console.error("API error:", err);
+      setError("Could not reach backend. Showing demo response.");
+      setResult(FALLBACK_RESULT);
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleAudioReady = async (blob: Blob, language: string) => {
-    const formData = new FormData();
-    formData.append("audio", blob, "recording.wav");
-    formData.append("language", language);
-    await executeQuery(formData);
+    try {
+      const formData = new FormData();
+      formData.append("audio", blob, "recording.wav");
+      formData.append("language", language);
+      await executeQuery(formData);
+    } catch (err) {
+      console.error("Audio processing error:", err);
+      setError("Audio processing failed. Please try a text query instead.");
+      setIsLoading(false);
+    }
   };
 
   const handleTextSubmit = async (text: string) => {
@@ -160,21 +182,27 @@ export default function HomePage() {
           </button>
         </form>
 
-        {result && (
+        {error && (
+          <div className="px-4 py-2 rounded-lg bg-amber-950/50 border border-amber-800/50 text-amber-300 text-xs">
+            ⚠️ {error}
+          </div>
+        )}
+
+        {result && result.latencies && (
           <div className="space-y-6 pt-4 border-t border-slate-800">
             <LatencyBreakdown latencies={result.latencies} />
 
-            {!result.guardrail.passed ? (
+            {result.guardrail && !result.guardrail.passed ? (
               <GuardrailAlert
-                reason={result.guardrail.reason || "Safety check triggered"}
-                groundingScore={result.guardrail.grounding_score}
+                reason={result.guardrail?.reason || "Safety check triggered"}
+                groundingScore={result.guardrail?.grounding_score}
               />
             ) : (
               <ResponseCard
-                query={result.query}
-                answer={result.answer}
-                language={result.language}
-                citedChunks={result.cited_chunks}
+                query={result.query || ""}
+                answer={result.answer || ""}
+                language={result.language || "en"}
+                citedChunks={result.cited_chunks || []}
               />
             )}
           </div>

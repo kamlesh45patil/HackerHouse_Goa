@@ -1,0 +1,15 @@
+﻿version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - SARVAM_API_KEY=${SARVAM_API_KEY:-mock_key}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-mock_key}
+    volumes:
+      - ./backend/data:/app/data
+    restart: unless-stopped

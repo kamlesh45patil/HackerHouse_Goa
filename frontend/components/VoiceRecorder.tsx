@@ -39,16 +39,27 @@ export const VoiceRecorder: React.FC<VoiceRecorderProps> = ({ onAudioReady, isLo
       <div className="flex items-center gap-2 mb-6 z-10">
         <Globe className="h-4 w-4 text-indigo-400" />
         <span className="text-xs text-slate-400 font-medium">Spoken Language:</span>
-        <div className="flex bg-slate-950/80 border border-slate-800 rounded-lg p-0.5">
+        <div className="flex flex-wrap gap-1 bg-slate-950/80 border border-slate-800 rounded-lg p-1">
           {[
-            { id: "auto", label: "Auto Detect" },
-            { id: "hi-IN", label: "हिंदी (Hindi)" },
-            { id: "en-IN", label: "English (IN)" }
+            { id: "auto", label: "Auto" },
+            { id: "hi-IN", label: "हिंदी" },
+            { id: "en-IN", label: "EN" },
+            { id: "bn-IN", label: "বাংলা" },
+            { id: "gu-IN", label: "ગુજ" },
+            { id: "kn-IN", label: "ಕನ್ನ" },
+            { id: "ml-IN", label: "മലയ" },
+            { id: "mr-IN", label: "मराठी" },
+            { id: "ne-IN", label: "नेपाली" },
+            { id: "or-IN", label: "ଓଡ଼ିଆ" },
+            { id: "pa-IN", label: "ਪੰਜਾਬੀ" },
+            { id: "ta-IN", label: "தமிழ்" },
+            { id: "te-IN", label: "తెలుగు" },
+            { id: "ur-IN", label: "اردو" },
           ].map((item) => (
             <button
               key={item.id}
               onClick={() => setSelectedLang(item.id)}
-              className={`px-2.5 py-1 text-xs rounded-md transition-all ${
+              className={`px-2 py-0.5 text-xs rounded-md transition-all ${
                 selectedLang === item.id
                   ? "bg-indigo-600 text-white font-medium shadow"
                   : "text-slate-400 hover:text-slate-200"

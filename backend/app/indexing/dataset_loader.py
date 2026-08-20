@@ -344,24 +344,55 @@ def _normalize_record(record: Dict[str, Any], idx: int) -> Dict[str, Any]:
 
 def load_msmarco_xi_dataset(max_samples: Optional[int] = None) -> List[Dict[str, Any]]:
     """
-    Loads dataset records using the real ai4bharat/MSMARCO-XI schema.
-    Tries HuggingFace first, falls back to curated seed dataset.
+    Loads dataset records from all 14 Indic languages of ai4bharat/MSMARCO-XI:
+    Assamese (as), Bengali (bn), Gujarati (gu), Hindi (hi), Kannada (kn),
+    Malayalam (ml), Marathi (mr), Nepali (ne), Odia (or), Punjabi (pa),
+    Sanskrit (sa), Tamil (ta), Telugu (te), Urdu (ur).
+
+    Tries HuggingFace streaming for each language, falls back to seed dataset.
     """
+    # All 14 supported language codes from ai4bharat/MSMARCO-XI
+    ALL_LANGUAGES = ["as", "bn", "gu", "hi", "kn", "ml", "mr", "ne", "or", "pa", "sa", "ta", "te", "ur"]
+
+    # Per-language sample limit to keep startup fast (14 langs x 5 = 70 passages minimum)
+    per_lang_limit = max(5, (max_samples // len(ALL_LANGUAGES))) if max_samples else 10
+
+    all_records: List[Dict[str, Any]] = []
+
     try:
         from datasets import load_dataset
-        print("Attempting to load ai4bharat/MSMARCO-XI from HuggingFace...")
-        ds = load_dataset("ai4bharat/MSMARCO-XI", "hi", split="validation", streaming=True)
-        records = []
-        for i, row in enumerate(ds):
-            if max_samples and i >= max_samples:
-                break
-            records.append(_normalize_record(row, i))
-        if records:
-            print(f"Loaded {len(records)} records from HuggingFace MSMARCO-XI.")
-            return records
-    except Exception as e:
-        print(f"HuggingFace dataset direct load notice ({e}). Using embedded seed dataset.")
+        loaded_langs = []
 
-    # Use rich seed dataset with normalized format
+        for lang_code in ALL_LANGUAGES:
+            try:
+                print(f"Loading MSMARCO-XI [{lang_code}] from HuggingFace...")
+                ds = load_dataset(
+                    "ai4bharat/MSMARCO-XI",
+                    lang_code,
+                    split="validation",
+                    streaming=True,
+                    trust_remote_code=True
+                )
+                count = 0
+                for i, row in enumerate(ds):
+                    if count >= per_lang_limit:
+                        break
+                    all_records.append(_normalize_record(row, len(all_records)))
+                    count += 1
+                if count > 0:
+                    loaded_langs.append(lang_code)
+            except Exception as e:
+                print(f"  [{lang_code}] skipped: {e}")
+                continue
+
+        if all_records:
+            print(f"Loaded {len(all_records)} records from {len(loaded_langs)} languages: {loaded_langs}")
+            return all_records[:max_samples] if max_samples else all_records
+
+    except Exception as e:
+        print(f"HuggingFace load failed ({e}). Using embedded multilingual seed dataset.")
+
+    # Fall back to rich seed dataset (Hindi-centric but covers all major topics)
     normalized = [_normalize_record(r, i) for i, r in enumerate(SEED_DATASET)]
     return normalized[:max_samples] if max_samples else normalized
+

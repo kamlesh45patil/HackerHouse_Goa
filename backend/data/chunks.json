@@ -1,27 +1,27 @@
 [
   {
     "id": "101_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] Goa is renowned for its scenic coastline. In North Goa, Baga, Calangute, and Anjuna are popular for nightlife, water sports, and beach shacks. South Goa offers quieter beaches like Palolem, Agonda, and Benaulim, perfect for relaxation and dolphin spotting.",
+    "text": "[Lang: EN] [Topic: travel] [Verified Source] Goa is renowned for its scenic coastline. In North Goa, Baga, Calangute, and Anjuna are popular for nightlife, water sports, and beach shacks. South Goa offers quieter beaches like Palolem, Agonda, and Benaulim, perfect for relaxation and dolphin spotting.",
     "score": 0.0,
     "metadata": {
       "doc_id": "101",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "travel",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 307,
+      "end_char": 301,
       "token_count": 45,
       "extra": {
-        "source_url": "https://goatourism.gov.in/beaches",
-        "prefix": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: travel] [Verified Source] "
       }
     }
   },
   {
     "id": "101_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] उत्तर गोवा में बागा और कलंगूट समुद्र तट अपने वाटर स्पोर्ट्स, नाइटलाइफ़ और कैफ़े के लिए प्रसिद्ध हैं। दक्षिण गोवा में पालोलेम और अगोंडा शांत और सुंदर दृश्यों के लिए जाने जाते हैं।",
+    "text": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] गोवा अपने सुंदर समुद्र तटों के लिए प्रसिद्ध है। उत्तर गोवा में बागा, कलंगूट और अंजुना नाइटलाइफ और वाटर स्पोर्ट्स के लिए लोकप्रिय हैं।",
     "score": 0.0,
     "metadata": {
       "doc_id": "101",
@@ -31,57 +31,117 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 229,
-      "token_count": 39,
+      "end_char": 184,
+      "token_count": 30,
       "extra": {
-        "source_url": "https://goatourism.gov.in/hi/beaches",
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] "
       }
     }
   },
   {
     "id": "101_meta_2",
-    "text": "[Lang: HIN_DEVA] [Topic: travel] The Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River in Goa. It is 60 km from Panaji on the Madgaon-Belagavi rail route.",
+    "text": "[Lang: EN] [Topic: travel] [Verified Source] The beaches of Goa attract millions of tourists every year. Baga beach is famous for its vibrant nightlife and water sports activities. Calangute is the longest beach in Goa and is also known as the Queen of Beaches.",
     "score": 0.0,
     "metadata": {
       "doc_id": "101",
       "passage_idx": 2,
+      "lang": "en",
+      "query_type": "travel",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 261,
+      "token_count": 44,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: travel] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "101_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] गोवा के समुद्र तट हर साल लाखों पर्यटकों को आकर्षित करते हैं। बागा बीच अपनी जीवंत नाइटलाइफ के लिए प्रसिद्ध है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "101",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "travel",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 160,
+      "token_count": 27,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: travel] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "101_meta_4",
+    "text": "[Lang: EN] [Topic: travel] Goa has many historic churches and temples dating back to Portuguese colonial rule.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "101",
+      "passage_idx": 4,
+      "lang": "en",
+      "query_type": "travel",
+      "is_selected": 0,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 110,
+      "token_count": 17,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: travel] "
+      }
+    }
+  },
+  {
+    "id": "101_meta_5",
+    "text": "[Lang: HIN_DEVA] [Topic: travel] गोवा में पुर्तगाली शासन काल के कई ऐतिहासिक चर्च और मंदिर हैं।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "101",
+      "passage_idx": 5,
       "lang": "hin_Deva",
       "query_type": "travel",
       "is_selected": 0,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 176,
-      "token_count": 29,
+      "end_char": 94,
+      "token_count": 16,
       "extra": {
-        "source_url": "https://en.wikipedia.org/wiki/Dudhsagar_Falls",
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: travel] "
       }
     }
   },
   {
     "id": "102_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River in the Indian state of Goa. It is 310 metres (1017 feet) tall and has an average width of 30 metres (100 feet). It is one of India's tallest waterfalls.",
+    "text": "[Lang: EN] [Topic: geography] [Verified Source] Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River in the Indian state of Goa. It is 310 metres (1017 feet) tall and has an average width of 30 metres (100 feet). It is one of India's tallest waterfalls.",
     "score": 0.0,
     "metadata": {
       "doc_id": "102",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "geography",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 278,
+      "end_char": 272,
       "token_count": 47,
       "extra": {
-        "source_url": "https://en.wikipedia.org/wiki/Dudhsagar_Falls",
-        "prefix": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: geography] [Verified Source] "
       }
     }
   },
   {
     "id": "102_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] दूधसागर जलप्रपात गोवा में मांडवी नदी पर स्थित है। इसकी कुल ऊँचाई लगभग 310 मीटर (1017 फीट) है और यह भारत के सबसे ऊँचे झरनों में से एक है।",
+    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] दूधसागर जलप्रपात गोवा में मांडवी नदी पर स्थित है। इसकी कुल ऊँचाई लगभग 310 मीटर (1017 फीट) है।",
     "score": 0.0,
     "metadata": {
       "doc_id": "102",
@@ -91,37 +151,117 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 190,
-      "token_count": 35,
+      "end_char": 147,
+      "token_count": 24,
       "extra": {
-        "source_url": "https://hi.wikipedia.org/wiki/दूधसागर_जलप्रपात",
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] "
       }
     }
   },
   {
+    "id": "102_meta_2",
+    "text": "[Lang: EN] [Topic: geography] [Verified Source] Dudhsagar, which means 'sea of milk' in Konkani, is located on the Goa-Karnataka border. The waterfall is accessible by jeep safari from Mollem or by train on the Konkan Railway route.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "102",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 232,
+      "token_count": 37,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "102_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] दूधसागर, जिसका अर्थ 'दूध का सागर' है, गोवा-कर्नाटक सीमा पर स्थित है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "102",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 122,
+      "token_count": 18,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "102_meta_4",
+    "text": "[Lang: EN] [Topic: geography] The Mandovi River is the most important river in Goa, flowing westward into the Arabian Sea.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "102",
+      "passage_idx": 4,
+      "lang": "en",
+      "query_type": "geography",
+      "is_selected": 0,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 122,
+      "token_count": 20,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: geography] "
+      }
+    }
+  },
+  {
+    "id": "102_meta_5",
+    "text": "[Lang: HIN_DEVA] [Topic: geography] मांडवी नदी गोवा की सबसे महत्वपूर्ण नदी है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "102",
+      "passage_idx": 5,
+      "lang": "hin_Deva",
+      "query_type": "geography",
+      "is_selected": 0,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 78,
+      "token_count": 12,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: geography] "
+      }
+    }
+  },
+  {
     "id": "103_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] Hacker House Goa 2026 is an elite developer residency and hackathon in Goa, India, bringing together top builders to build high-performance AI systems, voice agents, and real-time retrieval-augmented generation architectures.",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Hacker House Goa 2026 is an elite developer residency and hackathon in Goa, India, bringing together top builders to build high-performance AI systems, voice agents, and real-time retrieval-augmented generation architectures.",
     "score": 0.0,
     "metadata": {
       "doc_id": "103",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "technology",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 280,
+      "end_char": 274,
       "token_count": 36,
       "extra": {
-        "source_url": "https://hackerhousegoa.dev",
-        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "103_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] हैकर्स हाउस गोवा 2026 एक उच्च-स्तरीय डेवलपर रेजिडेंसी कार्यक्रम है जहाँ एआई, वॉइस-इनेबल्ड आरएजी (Voice RAG), और रियल-टाइम आर्किटेक्चर पर काम किया जाता है।",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] हैकर्स हाउस गोवा 2026 एक उच्च-स्तरीय डेवलपर रेजिडेंसी कार्यक्रम है जहाँ एआई, वॉइस RAG पर काम किया जाता है।",
     "score": 0.0,
     "metadata": {
       "doc_id": "103",
@@ -131,37 +271,77 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 209,
-      "token_count": 30,
+      "end_char": 161,
+      "token_count": 25,
       "extra": {
-        "source_url": "https://hackerhousegoa.dev/hi",
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "103_meta_2",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Hacker House Goa is a competitive AI hackathon where participants build voice-enabled RAG systems using datasets like MSMARCO-XI and technologies like FAISS, Sarvam AI STT, and Gemini Flash.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "103",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 239,
+      "token_count": 34,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "103_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] हैकर्स हाउस गोवा एक प्रतिस्पर्धी एआई हैकाथॉन है जहाँ वॉइस-इनेबल्ड आरएजी सिस्टम बनाए जाते हैं।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "103",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 148,
+      "token_count": 21,
+      "extra": {
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "104_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search and dense vector clustering. In RAG systems, FAISS enables sub-50ms top-k retrieval of passage embeddings matching the query embedding.",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] FAISS (Facebook AI Similarity Search) is an open-source library for efficient similarity search and dense vector clustering. In RAG systems, FAISS enables sub-50ms top-k retrieval of passage embeddings matching the query embedding.",
     "score": 0.0,
     "metadata": {
       "doc_id": "104",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "technology",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 286,
+      "end_char": 280,
       "token_count": 38,
       "extra": {
-        "source_url": "https://github.com/facebookresearch/faiss",
-        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "104_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] एफएआईएसएस (FAISS) डेंस वेक्टर्स की तेज खोज के लिए एक लाइब्रेरी है, जो आरएजी में 50 मिलीसेकंड से भी कम समय में प्रासंगिक संदर्भ खोजने की अनुमति देती है।",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] FAISS डेंस वेक्टर्स की तेज खोज के लिए एक लाइब्रेरी है, जो RAG में 50ms से भी कम समय में प्रासंगिक संदर्भ खोजने की अनुमति देती है।",
     "score": 0.0,
     "metadata": {
       "doc_id": "104",
@@ -171,37 +351,77 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 206,
-      "token_count": 35,
+      "end_char": 184,
+      "token_count": 33,
       "extra": {
-        "source_url": "https://faiss.ai/hi",
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "104_meta_2",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] In Retrieval-Augmented Generation, FAISS serves as the vector database that stores encoded document embeddings and enables millisecond-speed nearest-neighbor search to find the most relevant context passages for a given query.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "104",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 275,
+      "token_count": 36,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "104_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] RAG में FAISS वेक्टर डेटाबेस का काम करता है जो एन्कोडेड दस्तावेज़ एम्बेडिंग संग्रहीत करता है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "104",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 148,
+      "token_count": 22,
+      "extra": {
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "105_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] Sarvam AI is an Indian artificial intelligence company developing foundational speech-to-text, text-to-speech, and language models specifically optimized for 22 Indian languages including Hindi, Tamil, Telugu, and Marathi.",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Sarvam AI is an Indian artificial intelligence company developing foundational speech-to-text, text-to-speech, and language models specifically optimized for 22 Indian languages including Hindi, Tamil, Telugu, and Marathi.",
     "score": 0.0,
     "metadata": {
       "doc_id": "105",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "technology",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 277,
+      "end_char": 271,
       "token_count": 33,
       "extra": {
-        "source_url": "https://www.sarvam.ai",
-        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "105_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] सरवम एआई एक भारतीय एआई स्टार्टअप है जो 22 भारतीय भाषाओं के लिए विशेष स्पीच-टू-टेक्स्ट (STT), टीटीएस और भाषा मॉडल बनाता है।",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] सरवम एआई एक भारतीय एआई स्टार्टअप है जो 22 भारतीय भाषाओं के लिए विशेष STT, TTS और भाषा मॉडल बनाता है।",
     "score": 0.0,
     "metadata": {
       "doc_id": "105",
@@ -211,31 +431,71 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 177,
-      "token_count": 28,
+      "end_char": 155,
+      "token_count": 27,
       "extra": {
-        "source_url": "https://www.sarvam.ai/hi",
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "105_meta_2",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Sarvam AI's Saaras speech-to-text model supports real-time transcription of spoken Indian languages with high accuracy, making it ideal for voice-enabled AI applications targeting Indian users.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "105",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 242,
+      "token_count": 31,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "105_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] सरवम एआई का सारस STT मॉडल भारतीय भाषाओं की रियल-टाइम ट्रांसक्रिप्शन करता है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "105",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 131,
+      "token_count": 19,
+      "extra": {
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
       }
     }
   },
   {
     "id": "106_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] The Constitution of India came into effect on 26 January 1950, replacing the Government of India Act 1935 as the country's fundamental governing document. This day is celebrated annually as Republic Day in India.",
+    "text": "[Lang: EN] [Topic: history] [Verified Source] The Constitution of India came into effect on 26 January 1950, replacing the Government of India Act 1935 as the country's fundamental governing document. This day is celebrated annually as Republic Day in India.",
     "score": 0.0,
     "metadata": {
       "doc_id": "106",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "history",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 264,
+      "end_char": 258,
       "token_count": 40,
       "extra": {
-        "source_url": "https://en.wikipedia.org/wiki/Constitution_of_India",
-        "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: history] [Verified Source] "
       }
     }
   },
@@ -254,34 +514,74 @@
       "end_char": 167,
       "token_count": 29,
       "extra": {
-        "source_url": "https://hi.wikipedia.org/wiki/भारत_का_संविधान",
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "106_meta_2",
+    "text": "[Lang: EN] [Topic: history] [Verified Source] Dr. B.R. Ambedkar was the principal architect of the Indian Constitution. The Constituent Assembly took nearly three years to draft and finalize the Constitution, which was adopted on 26 November 1949.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "106",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "history",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 247,
+      "token_count": 37,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: history] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "106_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] डॉ. बी.आर. अंबेडकर भारतीय संविधान के प्रमुख निर्माता थे।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "106",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "history",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 108,
+      "token_count": 15,
+      "extra": {
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
       }
     }
   },
   {
     "id": "107_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] Photosynthesis is a biological process used by plants, algae, and certain bacteria to convert sunlight, carbon dioxide, and water into chemical energy stored in glucose, releasing oxygen as a byproduct.",
+    "text": "[Lang: EN] [Topic: science] [Verified Source] Photosynthesis is a biological process used by plants, algae, and certain bacteria to convert sunlight, carbon dioxide, and water into chemical energy stored in glucose, releasing oxygen as a byproduct.",
     "score": 0.0,
     "metadata": {
       "doc_id": "107",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "science",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 254,
+      "end_char": 248,
       "token_count": 36,
       "extra": {
-        "source_url": "https://en.wikipedia.org/wiki/Photosynthesis",
-        "prefix": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: science] [Verified Source] "
       }
     }
   },
   {
     "id": "107_meta_1",
-    "text": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] प्रकाश संश्लेषण वह प्रक्रिया है जिसके द्वारा हरे पौधे सूर्य के प्रकाश, पानी और कार्बन डाइऑक्साइड का उपयोग करके अपना भोजन (ग्लूकोज) बनाते हैं और ऑक्सीजन छोड़ते हैं।",
+    "text": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] प्रकाश संश्लेषण वह प्रक्रिया है जिसके द्वारा हरे पौधे सूर्य के प्रकाश से भोजन (ग्लूकोज) बनाते हैं और ऑक्सीजन छोड़ते हैं।",
     "score": 0.0,
     "metadata": {
       "doc_id": "107",
@@ -291,31 +591,71 @@
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 215,
-      "token_count": 34,
+      "end_char": 172,
+      "token_count": 27,
       "extra": {
-        "source_url": "https://hi.wikipedia.org/wiki/प्रकाश_संश्लेषण",
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "107_meta_2",
+    "text": "[Lang: EN] [Topic: science] [Verified Source] The process of photosynthesis occurs in the chloroplasts of plant cells, specifically using chlorophyll to absorb light energy. The overall equation is: 6CO2 + 6H2O + light energy → C6H12O6 + 6O2.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "107",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "science",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 242,
+      "token_count": 38,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: science] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "107_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] प्रकाश संश्लेषण पौधों के क्लोरोप्लास्ट में होता है जहाँ क्लोरोफिल प्रकाश ऊर्जा को अवशोषित करता है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "107",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "science",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 150,
+      "token_count": 22,
+      "extra": {
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: science] [Verified Source] "
       }
     }
   },
   {
     "id": "108_meta_0",
-    "text": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in Agra, India. It was commissioned in 1631 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal.",
+    "text": "[Lang: EN] [Topic: history] [Verified Source] The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in Agra, India. It was commissioned in 1631 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal.",
     "score": 0.0,
     "metadata": {
       "doc_id": "108",
       "passage_idx": 0,
-      "lang": "hin_Deva",
+      "lang": "en",
       "query_type": "history",
       "is_selected": 1,
       "strategy": "metadata_aware",
       "start_char": 0,
-      "end_char": 270,
+      "end_char": 264,
       "token_count": 46,
       "extra": {
-        "source_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
-        "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: history] [Verified Source] "
       }
     }
   },
@@ -334,8 +674,448 @@
       "end_char": 178,
       "token_count": 31,
       "extra": {
-        "source_url": "https://hi.wikipedia.org/wiki/ताजमहल",
+        "source_url": "",
         "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "108_meta_2",
+    "text": "[Lang: EN] [Topic: history] [Verified Source] The Taj Mahal was built between 1632 and 1653 and employed over 20,000 artisans. It is considered one of the finest examples of Mughal architecture and a UNESCO World Heritage Site.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "108",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "history",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 227,
+      "token_count": 37,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: history] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "108_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] ताजमहल 1632 से 1653 के बीच बनाया गया था और यह यूनेस्को विश्व धरोहर स्थल है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "108",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "history",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 127,
+      "token_count": 22,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: history] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "109_meta_0",
+    "text": "[Lang: EN] [Topic: sports] [Verified Source] Virat Kohli is an Indian international cricketer who is regarded as one of the greatest batsmen of all time. He has scored over 26,000 international runs across all formats and holds numerous batting records including most ODI centuries after Sachin Tendulkar.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "109",
+      "passage_idx": 0,
+      "lang": "en",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 305,
+      "token_count": 47,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "109_meta_1",
+    "text": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] विराट कोहली एक भारतीय अंतरराष्ट्रीय क्रिकेटर हैं जिन्हें सर्वकालिक महान बल्लेबाजों में से एक माना जाता है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "109",
+      "passage_idx": 1,
+      "lang": "hin_Deva",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 157,
+      "token_count": 23,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "109_meta_2",
+    "text": "[Lang: EN] [Topic: sports] [Verified Source] Virat Kohli captained the Indian national cricket team in Test, ODI, and T20I formats. He is known for his aggressive batting style and exceptional fitness. He has scored over 80 international centuries and is considered one of the best batsmen in the world.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "109",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 303,
+      "token_count": 49,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "109_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] विराट कोहली ने भारतीय क्रिकेट टीम की कप्तानी की है और उन्होंने 80 से अधिक अंतरराष्ट्रीय शतक लगाए हैं।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "109",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 152,
+      "token_count": 25,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "110_meta_0",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Artificial Intelligence (AI) is the simulation of human intelligence processes by computer systems. These processes include learning (acquiring information and rules for using it), reasoning (using rules to reach approximate or definite conclusions), and self-correction.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "110",
+      "passage_idx": 0,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 320,
+      "token_count": 41,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "110_meta_1",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] आर्टिफिशियल इंटेलिजेंस (AI) कंप्यूटर सिस्टम द्वारा मानव बुद्धिमत्ता की नकल करने की प्रक्रिया है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "110",
+      "passage_idx": 1,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 151,
+      "token_count": 20,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "110_meta_2",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] Modern AI includes machine learning, deep learning, natural language processing, and computer vision. Large language models (LLMs) like GPT and Gemini represent the latest advancement in AI, capable of understanding and generating human-like text.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "110",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 296,
+      "token_count": 40,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "110_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] आधुनिक AI में मशीन लर्निंग, डीप लर्निंग और प्राकृतिक भाषा प्रसंस्करण शामिल हैं।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "110",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 134,
+      "token_count": 19,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "111_meta_0",
+    "text": "[Lang: EN] [Topic: sports] [Verified Source] Australia won the ICC Cricket World Cup 2023, defeating India in the final held at the Narendra Modi Stadium in Ahmedabad on November 19, 2023. This was Australia's sixth World Cup title.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "111",
+      "passage_idx": 0,
+      "lang": "en",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 232,
+      "token_count": 38,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "111_meta_1",
+    "text": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] ऑस्ट्रेलिया ने 2023 आईसीसी क्रिकेट विश्व कप जीता, अहमदाबाद में फाइनल में भारत को हराकर।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "111",
+      "passage_idx": 1,
+      "lang": "hin_Deva",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 138,
+      "token_count": 21,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "111_meta_2",
+    "text": "[Lang: EN] [Topic: sports] [Verified Source] The ICC Men's Cricket World Cup 2023 was hosted by India. India reached the final unbeaten but were defeated by Australia by 6 wickets. Travis Head scored a brilliant century to help Australia win.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "111",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 242,
+      "token_count": 40,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "111_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] 2023 विश्व कप का फाइनल अहमदाबाद के नरेंद्र मोदी स्टेडियम में खेला गया जहाँ ट्रैविस हेड की शानदार शतकीय पारी से ऑस्ट्रेलिया ने जीत हासिल की।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "111",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "sports",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 190,
+      "token_count": 32,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: sports] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "112_meta_0",
+    "text": "[Lang: EN] [Topic: geography] [Verified Source] New Delhi is the capital of India and serves as the seat of all three branches of the Government of India — the executive, the legislative, and the judiciary. It is located within the National Capital Territory of Delhi.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "112",
+      "passage_idx": 0,
+      "lang": "en",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 268,
+      "token_count": 45,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "112_meta_1",
+    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] नई दिल्ली भारत की राजधानी है और भारत सरकार की कार्यपालिका, विधायिका और न्यायपालिका का केंद्र है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "112",
+      "passage_idx": 1,
+      "lang": "hin_Deva",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 150,
+      "token_count": 23,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "112_meta_2",
+    "text": "[Lang: EN] [Topic: geography] [Verified Source] New Delhi was designed by British architects Edwin Lutyens and Herbert Baker and was inaugurated as the capital of British India in 1931. It replaced Calcutta (now Kolkata) as the administrative capital.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "112",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 251,
+      "token_count": 38,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "112_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] नई दिल्ली को ब्रिटिश वास्तुकारों एडविन लुटियंस और हर्बर्ट बेकर द्वारा डिजाइन किया गया था।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "112",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "geography",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 143,
+      "token_count": 21,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: geography] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "113_meta_0",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] MSMARCO-XI (IndicRAGSuite) is a dataset by AI4Bharat containing the MS MARCO dataset translated into 14 Indic languages including Hindi, Bengali, Tamil, Telugu, Marathi, and more. It contains over 10 million training rows for multilingual retrieval-augmented generation research.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "113",
+      "passage_idx": 0,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 328,
+      "token_count": 43,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "113_meta_1",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] MSMARCO-XI एक AI4Bharat का डेटासेट है जिसमें MS MARCO को 14 भारतीय भाषाओं में अनुवादित किया गया है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "113",
+      "passage_idx": 1,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 154,
+      "token_count": 24,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "113_meta_2",
+    "text": "[Lang: EN] [Topic: technology] [Verified Source] The ai4bharat/MSMARCO-XI dataset is available on HuggingFace and supports languages like Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Nepali, Odia, Punjabi, Sanskrit, Tamil, Telugu, and Urdu. It is used for building Indic language RAG systems.",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "113",
+      "passage_idx": 2,
+      "lang": "en",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 312,
+      "token_count": 41,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: EN] [Topic: technology] [Verified Source] "
+      }
+    }
+  },
+  {
+    "id": "113_meta_3",
+    "text": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] ai4bharat/MSMARCO-XI HuggingFace पर उपलब्ध है और हिंदी, बंगाली, तमिल सहित कई भाषाओं का समर्थन करता है।",
+    "score": 0.0,
+    "metadata": {
+      "doc_id": "113",
+      "passage_idx": 3,
+      "lang": "hin_Deva",
+      "query_type": "technology",
+      "is_selected": 1,
+      "strategy": "metadata_aware",
+      "start_char": 0,
+      "end_char": 157,
+      "token_count": 22,
+      "extra": {
+        "source_url": "",
+        "prefix": "[Lang: HIN_DEVA] [Topic: technology] [Verified Source] "
       }
     }
   }

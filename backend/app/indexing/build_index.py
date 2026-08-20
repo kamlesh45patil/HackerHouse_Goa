@@ -1,4 +1,4 @@
-﻿import os
+import os
 import json
 import numpy as np
 from typing import List, Tuple, Dict, Any
@@ -68,20 +68,21 @@ def build_faiss_index(
         doc_id = str(record.get("query_id", f"doc_{r_idx}"))
         query_type = record.get("query_type", "general")
         passages = record.get("passages", [])
-        
+
         for p_idx, p in enumerate(passages):
-            p_text = p.get("passage_text", "")
+            # Support both flat dict format (normalized) and legacy format
+            p_text = p.get("passage_text", "") if isinstance(p, dict) else ""
             if not p_text.strip():
                 continue
-            
+
             meta = {
                 "passage_idx": p_idx,
-                "lang": record.get("target_lang", "en"),
+                "lang": p.get("lang", record.get("target_lang", "en")),
                 "query_type": query_type,
                 "is_selected": p.get("is_selected", 0),
                 "url": p.get("url", "")
             }
-            
+
             chunks = chunker.chunk_document(doc_id=doc_id, text=p_text, metadata=meta)
             all_chunks.extend(chunks)
 

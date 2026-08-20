@@ -1,4 +1,4 @@
-﻿import os
+import os
 import json
 import time
 import numpy as np
@@ -32,12 +32,12 @@ class RetrievalEngine:
                 chunks_dicts = json.load(f)
                 self.chunks = [Chunk(**c) for c in chunks_dicts]
 
-    def retrieve(self, query: str, top_k: int = 5) -> Tuple[List[CitedChunk], float]:
+    def retrieve(self, query: str, top_k: int = 5, min_score: float = 0.35) -> Tuple[List[CitedChunk], float]:
         if self.index is None or not self.chunks:
             self.initialize()
 
         t_start = time.perf_counter()
-        
+
         q_emb = self.model.encode([query])
         q_emb = np.array(q_emb, dtype=np.float32)
         q_norm = np.linalg.norm(q_emb, axis=1, keepdims=True)
@@ -50,8 +50,11 @@ class RetrievalEngine:
         results: List[CitedChunk] = []
         for rank_idx, chunk_idx in enumerate(indices[0]):
             if 0 <= chunk_idx < len(self.chunks):
-                chunk = self.chunks[chunk_idx]
                 score = float(scores[0][rank_idx])
+                # Only include results above minimum relevance threshold
+                if score < min_score:
+                    continue
+                chunk = self.chunks[chunk_idx]
                 results.append(CitedChunk(
                     id=chunk.id,
                     text=chunk.text,

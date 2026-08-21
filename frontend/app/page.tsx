@@ -53,13 +53,8 @@ export default function HomePage() {
     setResult(null);
     setError(null);
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
-      const res = await fetch(`${apiUrl}/api/query`, {
+      const res = await fetch(`/api/query`, {
         method: "POST",
-        headers: {
-          "ngrok-skip-browser-warning": "true",
-          "Bypass-Tunnel-Reminder": "true"
-        },
         body: formData,
       });
       const data = await res.json();
